@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lbl_mostrar_deporte"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MostrarUsuarioActivity">
+
+    <TextView
+        android:id="@+id/lbl_usuario_mostrar"
+        android:layout_width="313dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/lbl_usuario_mostrar"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_apellido_mostrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_nombre_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/lbl_nombre_mostrar"
+        app:layout_constraintStart_toStartOf="@+id/lbl_usuario_mostrar"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_usuario_mostrar" />
+
+    <TextView
+        android:id="@+id/lbl_apellido_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="33dp"
+        android:text="@string/lbl_apellido_mostrar"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_usuario_mostrar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_campo_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_campo_nombre"
+        app:layout_constraintStart_toStartOf="@+id/lbl_nombre_mostrar"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_nombre_mostrar" />
+
+    <TextView
+        android:id="@+id/lbl_campo_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_campo_apellido"
+        app:layout_constraintStart_toStartOf="@+id/lbl_apellido_mostrar"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_apellido_mostrar" />
+
+    <TextView
+        android:id="@+id/lbl_rut_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/lbl_rut_mostrar"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_campo_rut"
+        app:layout_constraintStart_toStartOf="@+id/lbl_campo_rut" />
+
+    <TextView
+        android:id="@+id/lbl_campo_rut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="83dp"
+        android:text="@string/lbl_campo_rut"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_sexo_mostrar"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_apellido_mostrar"
+        app:layout_constraintStart_toEndOf="@+id/lbl_edad_mostrar" />
+
+    <TextView
+        android:id="@+id/lbl_edad_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/lbl_edad_mostrar"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_campo_edad"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_campo_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="61dp"
+        android:text="@string/lbl_campo_edad"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_deporte_favorito"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_sexo_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="308dp"
+        android:text="@string/lbl_sexo_mostrar"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_siguiente"
+        app:layout_constraintEnd_toEndOf="@+id/btn_siguiente"
+        app:layout_constraintStart_toStartOf="@+id/lbl_usuario_actual"
+        app:layout_constraintTop_toTopOf="@+id/lbl_usuario_mostrar" />
+
+    <TextView
+        android:id="@+id/lbl_campo_sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        android:text="@string/lbl_campo_sexo"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_sexo_mostrar"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_sexo_mostrar" />
+
+    <TextView
+        android:id="@+id/lbl_campo_deporte"
+        android:layout_width="112dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="188dp"
+        android:text="@string/lbl_campo_deporte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lbl_deporte_favorito"
+        app:layout_constraintTop_toTopOf="@+id/lbl_sexo_mostrar" />
+
+    <Button
+        android:id="@+id/btn_anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="59dp"
+        android:text="@string/btn_anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_siguiente"
+        app:layout_constraintBottom_toTopOf="@+id/btn_volver_desde_mostrar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/lbl_actual"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_usuario_actual"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_total_usuarios" />
+
+    <TextView
+        android:id="@+id/lbl_primer_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:text="@string/lbl_primer_usuario"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_anterior"
+        app:layout_constraintStart_toEndOf="@+id/btn_anterior" />
+
+    <TextView
+        android:id="@+id/lbl_usuario_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/lbl_usuario_actual"
+        app:layout_constraintBottom_toTopOf="@+id/btn_volver_desde_mostrar"
+        app:layout_constraintStart_toStartOf="@+id/lbl_actual" />
+
+    <TextView
+        android:id="@+id/lbl_total_usuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/lbl_total_usuarios"
+        app:layout_constraintBottom_toTopOf="@+id/btn_volver_desde_mostrar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_siguiente" />
+
+    <TextView
+        android:id="@+id/lbl_deporte_favorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/lbl_deporte_favorito"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_campo_deporte"
+        app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
+        app:layout_constraintStart_toEndOf="@+id/lbl_campo_edad" />
+
+    <Button
+        android:id="@+id/btn_volver_desde_mostrar"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/btn_volver_desde_mostrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_anterior" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">ActividadSemanaDePausa</string>
+    <string name="btn_registrar">registrar usuario</string>
+    <string name="btn_mostrar">mostrar usuario</string>
+    <string name="btn_listar_todos">listar usuarios</string>
+    <string name="lbl_registrar_usuario">Registrar usuario</string>
+    <string name="lbl_nombre">Nombre:</string>
+    <string name="lbl_apellido">Apellido:</string>
+    <string name="lbl_rut">Rut:</string>
+    <string name="txt_rut" />
+    <string name="lbl_edad">Edad:</string>
+    <string name="rut">Rut:</string>
+    <string name="edad" />
+    <string name="lbl_sexo">Sexo</string>
+    <string name="lbl_deporte">Deporte favorito</string>
+    <string name="btn_registrar_usuario_enRegistrar">Registrar</string>
+    <string name="lbl_cantidad">Cantidad</string>
+    <string name="lbl_palabra_usuarios">usuarios</string>
+    <string name="lbl_numero_usuarios">---</string>
+    <string name="btn_volver_desde_registrar">Volver</string>
+    <string name="sw_esHombre" />
+    <string name="lbl_usuario_mostrar">Usuario</string>
+    <string name="lbl_nombre_mostrar">Nombre:</string>
+    <string name="lbl_apellido_mostrar">Apellido:</string>
+    <string name="lbl_campo_nombre">------</string>
+    <string name="lbl_campo_apellido">------</string>
+    <string name="lbl_rut_mostrar">Rut:</string>
+    <string name="lbl_campo_rut">------</string>
+    <string name="lbl_edad_mostrar">Edad:</string>
+    <string name="lbl_campo_edad">------</string>
+    <string name="lbl_sexo_mostrar">Sexo:</string>
+    <string name="lbl_campo_sexo">------</string>
+    <string name="lbl_campo_deporte">------</string>
+    <string name="lbl_deporte_favorito">Deporte Favorito:</string>
+    <string name="btn_anterior">anterior</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="lbl_actual">Actual</string>
+    <string name="btn_volver_desde_mostrar">Volver</string>
+    <string name="lbl_primer_usuario">0</string>
+    <string name="lbl_usuario_actual">0</string>
+    <string name="lbl_total_usuarios">0</string>
+
+
+    <string-array name="array_deportes">
+        <item>Fútbol</item>
+        <item>Basquetbol</item>
+        <item>Natación</item>
+        <item>Rugby</item>
+        <item>Baseball</item>
+        <item>Ciclismo</item>
+    </string-array>
+
+
+</resources>
