@@ -39,6 +39,8 @@
     <string name="lbl_primer_usuario">0</string>
     <string name="lbl_usuario_actual">0</string>
     <string name="lbl_total_usuarios">0</string>
+    <string name="btn_volver">Volver</string>
+    <string name="lbl_lista_de_usuarios">Lista de usuarios</string>
 
 
     <string-array name="array_deportes">

@@ -69,13 +69,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", rut='" + rut + '\'' +
-                ", deporteFavorito='" + deporteFavorito + '\'' +
-                ", esHombre=" + esHombre +
-                ", edad=" + edad +
-                '}';
+        return   "Nombre: "+nombre +"\n"+ "Apellido: "+apellido +"\n"+"Rut: "+rut +"\n";
+
     }
 }

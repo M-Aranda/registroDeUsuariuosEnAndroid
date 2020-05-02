@@ -46,12 +46,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="122dp"
-        android:layout_marginBottom="122dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginBottom="163dp"
         android:text="@string/lbl_rut"
-        app:layout_constraintBottom_toTopOf="@+id/txt_edad"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_edad"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_registrar_usuario" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txt_rut"
@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/lbl_edad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_rut" />
@@ -84,16 +84,19 @@
     <EditText
         android:id="@+id/txt_edad"
         android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="110dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="7dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/female"
+        app:layout_constraintBottom_toBottomOf="@+id/sw_esHombre"
         app:layout_constraintEnd_toStartOf="@+id/lbl_sexo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/female" />
+        app:layout_constraintTop_toTopOf="@+id/lbl_sexo"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/txt_nombre"
@@ -128,10 +131,10 @@
         android:id="@+id/lbl_sexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="14dp"
         android:text="@string/lbl_sexo"
-        app:layout_constraintBottom_toTopOf="@+id/male"
+        app:layout_constraintBottom_toTopOf="@+id/sw_esHombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txt_edad" />
 
@@ -139,7 +142,7 @@
         android:id="@+id/sw_esHombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="4dp"
         android:text="@string/sw_esHombre"
         app:layout_constraintEnd_toStartOf="@+id/male"
         app:layout_constraintStart_toEndOf="@+id/female"
@@ -147,16 +150,14 @@
 
     <Spinner
         android:id="@+id/cbo_deporte"
-        android:layout_width="0dp"
+        android:layout_width="182dp"
         android:layout_height="26dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="121dp"
         android:layout_marginBottom="120dp"
         android:entries="@array/array_deportes"
         app:layout_constraintBottom_toTopOf="@+id/lbl_palabra_usuarios"
-        app:layout_constraintEnd_toEndOf="@+id/txt_edad"
-        app:layout_constraintStart_toStartOf="@+id/txt_rut"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/female" />
 
     <TextView
@@ -171,13 +172,15 @@
 
     <Button
         android:id="@+id/btn_registrar_usuario_enRegistrar"
-        android:layout_width="185dp"
+        android:layout_width="0dp"
         android:layout_height="69dp"
         android:layout_marginStart="19dp"
         android:layout_marginTop="117dp"
+        android:layout_marginEnd="19dp"
         android:layout_marginBottom="116dp"
         android:text="@string/btn_registrar_usuario_enRegistrar"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_edad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbl_deporte" />
 
@@ -226,29 +229,28 @@
     <ImageView
         android:id="@+id/male"
         android:layout_width="0dp"
-        android:layout_height="39dp"
+        android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_marginTop="248dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="248dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="1dp"
         android:src="@drawable/male"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_registrar_usuario_enRegistrar"
+        app:layout_constraintBottom_toBottomOf="@+id/female"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/sw_esHombre"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_nombre" />
+        app:layout_constraintTop_toTopOf="@+id/sw_esHombre" />
 
     <ImageView
         android:id="@+id/female"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginTop="34dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginTop="327dp"
+        android:layout_marginBottom="327dp"
         android:src="@drawable/female"
-        app:layout_constraintBottom_toTopOf="@+id/lbl_deporte"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_volver_desde_registrar"
         app:layout_constraintEnd_toStartOf="@+id/sw_esHombre"
         app:layout_constraintStart_toEndOf="@+id/txt_edad"
-        app:layout_constraintTop_toTopOf="@+id/lbl_sexo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

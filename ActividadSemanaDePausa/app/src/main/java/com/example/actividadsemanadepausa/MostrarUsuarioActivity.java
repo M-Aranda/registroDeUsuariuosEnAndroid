@@ -102,7 +102,7 @@ public class MostrarUsuarioActivity extends AppCompatActivity {
 
         contador = contador + alterador;
 
-        if ((contador >= 0) && (contador - 1 <= Bd_static.listadoDeUsuarios.size())) {
+        if ((contador >= 0) && (contador  <= Bd_static.listadoDeUsuarios.size() - 1)) {
 
             lbl_campo_nombre.setText(Bd_static.listadoDeUsuarios.get(contador).getNombre());
             lbl_campo_apellido.setText(Bd_static.listadoDeUsuarios.get(contador).getApellido());
@@ -115,6 +115,8 @@ public class MostrarUsuarioActivity extends AppCompatActivity {
             } else if (Bd_static.listadoDeUsuarios.get(contador).isEsHombre() == false) {
                 lbl_campo_sexo.setText("Mujer");
             }
+
+            lbl_usuario_actual.setText(String.valueOf(contador+1));
         }
 
 
